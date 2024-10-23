@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+html, body, #root, button, .css-qcqlck-MuiDataGrid-root {
+  font-family: 'SUIT-Regular' !important;
+  font-weight: 200 !important;
+}
+
+.loading_area {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a080836;
+  z-index: 9999;
+  background-image: url("./images/loading.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100px 100px;
+}
+
+.login_main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.login_main .box {
+  width: 600px;
+  height: 400px;
+  background-color: gainsboro;
+  border-radius: 20px;
+  box-shadow: 6px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login_main h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.login_main .login_section {
+  width: 400px;
+  margin: 40px auto 0;
+}
+
+.login_main .login_label {
+  display: inline-block;
+  width: 100px;
+}
+
+.login_main .login_label, .login_main .login_input {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.login_main .login_btn_area .login_access_btn {
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+  border-radius: 7px;
+}
+
+.grid_image_update_button {
+  width: 100%;
+  color: #fff;
+  background-color: rgb(60, 92, 92);
+}
+
+.grid_image_thumnail_button {
+  width: 100%;
+  color: #fff;
+  background-color: rgb(31, 82, 82);
+}
+
+/* 딤 처리 스타일 */
+.dim-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 투명한 딤 처리 */
+  z-index: 999; /* 다른 요소 위에 표시 */
+}
+
+/* 레이어 알럿 스타일 */
+.layer-alert {
+  position: fixed;
+  top: 50%; /* 화면 세로 중앙으로 이동 */
+  left: 50%; /* 화면 가로 중앙으로 이동 */
+  transform: translate(-50%, -50%); /* 화면 중앙 정렬 */
+  width: 1500px; /* 가로 크기 */
+  height: 700px; /* 세로 크기 */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+  /* padding: 20px; */
+}
+
+.popup_grid_area {
+  width:100%; 
+  /* height:100%;  */
+  border:1px solid #e6e7e8; 
+  /* margin-top:10px; */
+}
+
+.srch_wrap .btn-srch.btn-input {
+  display: inline-block; 
+  height: 26px;
+  width: 70%;
+  line-height: 1;
+}
+
+.MuiDataGrid-row.grid_checked_row {
+  background-color: rgb(253, 171, 171) !important;
+}
+
+.MuiDataGrid-row.grid_checked_row.Mui-selected {
+  background-color: rgb(250, 138, 138) !important;
+}
