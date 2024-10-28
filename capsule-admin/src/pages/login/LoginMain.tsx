@@ -42,7 +42,7 @@ function LoginMain() {
       password: loginPwd
     };
 
-    const data = await commonAjaxWrapper('post', '/public/token/login', param);
+    const data = await commonAjaxWrapper('post', '/public/user/login', param);
     if(data) {
       alert('로그인을 성공하였습니다');
       localStorage.setItem('adminToken', JSON.stringify(data));
